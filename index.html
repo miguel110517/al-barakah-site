@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Al Barakah</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            arabic: ['Amiri', 'serif'],
+          },
+          colors: {
+            beige: '#fdf3e6',
+            rojoArabe: '#8B1E3F',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-beige text-gray-800 font-arabic">
+
+  <!-- NAVBAR -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-rojoArabe font-bold text-2xl">Al Barakah</h1>
+      <nav class="space-x-4 text-sm font-semibold">
+        <a href="#inicio" class="text-gray-700 hover:text-rojoArabe">Inicio</a>
+        <a href="#menu" class="text-gray-700 hover:text-rojoArabe">Recomendados</a>
+        <a href="#descargar" class="text-gray-700 hover:text-rojoArabe">Menú</a>
+        <a href="#historia" class="text-gray-700 hover:text-rojoArabe">Historia</a>
+        <a href="#contacto" class="text-gray-700 hover:text-rojoArabe">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+<!-- BANNER PROFESIONAL -->
+<section id="inicio" class="relative h-[90vh] w-full bg-center bg-cover" style="background-image: url('imagenes/banner.jpg.jpg');">
+  <!-- Capa oscura con degradado -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70"></div>
+
+  <!-- Contenido centrado -->
+  <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+    <h2 class="text-3xl md:text-5xl font-bold tracking-wide mb-2 drop-shadow-lg">Bienvenidos a</h2>
+    <h1 class="text-5xl md:text-7xl font-extrabold text-rojoArabe mb-4 drop-shadow-xl">Al Barakah</h1>
+    <p class="text-lg md:text-2xl max-w-xl drop-shadow-md">
+      Sabores auténticos del Medio Oriente con pasión y tradición.
+    </p>
+
+    <a href="#menu" class="mt-8 inline-block bg-rojoArabe text-white px-6 py-3 rounded-full text-sm md:text-base hover:bg-red-700 transition-shadow shadow-lg hover:shadow-xl">
+      Ver Menú
+    </a>
+  </div>
+</section>
+
+
+  <!-- MENÚ -->
+  <section id="menu" class="py-12 px-4 max-w-7xl mx-auto">
+    <h3 class="text-2xl md:text-3xl font-bold text-center text-rojoArabe mb-10 uppercase">Nuestros Platos Estrella</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Plato 1 -->
+      <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="imagenes/shawarma.jpg" alt="Shawarma" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h4 class="text-xl font-semibold mb-2 text-rojoArabe">Shawarma</h4>
+          <p class="text-sm text-gray-700 mb-3">Carne especiada servida en pan pita con vegetales frescos y salsas tradicionales.</p>
+          <a href="https://wa.me/1234567890?text=Hola,%20quiero%20pedir%20un%20Shawarma%20de%20Al%20Barakah"
+            class="inline-block bg-green-500 text-white px-4 py-2 text-sm rounded-full hover:bg-green-600 transition">
+            Pedir por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Plato 2 -->
+      <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="imagenes/Falafel.jpg" alt="Falafel" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h4 class="text-xl font-semibold mb-2 text-rojoArabe">Falafel</h4>
+          <p class="text-sm text-gray-700 mb-3">Croquetas crujientes de garbanzo con salsa tahini y ensalada fresca.</p>
+          <a href="https://api.whatsapp.com/send?phone=573007656000&fbclid=PAQ0xDSwL48utleHRuA2FlbQIxMQABp6vGRG-g-6eF4zqcqHCVLIOuOuyfZ1kC7LtTO0c5drsOXkP7-Wiv6ggxmnNg_aem_kcatvnfhet9v0zTJC2h1BA"
+            class="inline-block bg-green-500 text-white px-4 py-2 text-sm rounded-full hover:bg-green-600 transition">
+            Pedir por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Plato 3 -->
+      <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="imagenes/Hummus.jpeg" alt="Hummus" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h4 class="text-xl font-semibold mb-2 text-rojoArabe">Hummus</h4>
+          <p class="text-sm text-gray-700 mb-3">Crema suave de garbanzos con aceite de oliva y pan árabe tostado.</p>
+          <a href="https://api.whatsapp.com/send?phone=573007656000&fbclid=PAQ0xDSwL48utleHRuA2FlbQIxMQABp6vGRG-g-6eF4zqcqHCVLIOuOuyfZ1kC7LtTO0c5drsOXkP7-Wiv6ggxmnNg_aem_kcatvnfhet9v0zTJC2h1BA"
+            class="inline-block bg-green-500 text-white px-4 py-2 text-sm rounded-full hover:bg-green-600 transition">
+            Pedir por WhatsApp
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PDF DESCARGA -->
+  <section id="descargar" class="text-center py-10 px-4 bg-white">
+    <h3 class="text-2xl md:text-3xl font-bold text-rojoArabe mb-4">Descarga Nuestro Menú</h3>
+    <p class="text-gray-700 mb-6">Consulta todos nuestros platos.</p>
+    <a href="documento/Menú.pdf" download
+      class="inline-block bg-rojoArabe text-white px-6 py-3 rounded-full font-semibold hover:bg-red-700 transition">
+      Descargar Menú PDF
+    </a>
+  </section>
+
+  <!-- NUESTRA HISTORIA -->
+  <section id="historia" class="bg-beige py-12 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-2xl md:text-3xl font-bold text-rojoArabe mb-4">Nuestra Historia</h3>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        Al Barakah nació del deseo de compartir la auténtica cocina del Medio Oriente con nuestra comunidad. Desde nuestros inicios, hemos horneado con pasión, usando recetas tradicionales transmitidas por generaciones. Cada plato cuenta una historia, y cada bocado es una muestra de hospitalidad árabe.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="bg-rojoArabe text-white text-center py-12 px-4">
+    <h3 class="text-2xl font-bold mb-4">Contáctanos</h3>
+    <p class="mb-2">📍 Calle #4A-14, Cerete - Córdoba</p>
+    <p class="mb-2">📍 Calle #4A-14, Montería- Córdoba</p>
+    <p class="mb-2">📞 <a href="tel:+1234567890" class="underline">123 456 7890</a></p>
+    <p class="mb-6">⏰ Lunes a Domingo: 05:00 PM - 10:00 PM</p>
+    <a href="https://api.whatsapp.com/send?phone=573007656000&fbclid=PAQ0xDSwL48utleHRuA2FlbQIxMQABp6vGRG-g-6eF4zqcqHCVLIOuOuyfZ1kC7LtTO0c5drsOXkP7-Wiv6ggxmnNg_aem_kcatvnfhet9v0zTJC2h1BA"
+      class="inline-block bg-green-500 text-white px-4 py-2 rounded-full shadow hover:bg-green-600 transition">
+      Pide por WhatsApp
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-100 text-center text-sm py-6 text-gray-600">
+    &copy; 2025 Al Barakah. Todos los derechos reservados. 
+
+</body>
+
+</html>
